@@ -24,7 +24,6 @@ services:
       - API_HOST=${API_HOST}
       - API_PORT=${API_PORT}
       - CONSUMER_PORT=${CONSUMER_PORT}
-      - DB_NAME=${DB_NAME}
     volumes:
       - ./consumer/code:/app/
     command: python consumer.py
